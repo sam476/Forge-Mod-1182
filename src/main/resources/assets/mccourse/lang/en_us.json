@@ -1,5 +1,7 @@
 {
   "item.mccourse.cobalt_ingot": "Cobalt Ingot",
   "tooltip.block.java_block": "Java is a class based object-oriented programming language that makes the computer do things like explosions!",
-  "itemGroup.coursemodtab": "MCCourse Mod"
+  "itemGroup.coursemodtab": "MCCourse Mod",
+  "tooltip.block.syntax_block": "Java follows this syntax: public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}",
+  "tooltip.block.var_block": "I'm a variable. I store data values like sounds. I can be one of these: String - stores text, such as \"Hello\". String values are surrounded by double quotes\nint - stores integers (whole numbers), without decimals, such as 123 or -123\nfloat - stores floating point numbers, with decimals, such as 19.99 or -19.99\nchar - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes\nboolean - stores values with two states: true or false. To make me you do this! type variableName = value;"
 }

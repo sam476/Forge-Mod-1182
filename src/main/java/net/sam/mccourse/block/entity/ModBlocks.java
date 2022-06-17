@@ -15,6 +15,7 @@ import net.sam.mccourse.MCCourseMod;
 import net.sam.mccourse.block.custom.JavaBlock;
 import net.sam.mccourse.item.ModCreativeModeTab;
 import net.sam.mccourse.item.ModItems;
+import net.sam.mccourse.sound.ModSounds;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -24,9 +25,18 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MCCourseMod.MOD_ID);
 
-    public static final RegistryObject<Block> Java_BLOCK = registerBlock("java_block",
+    public static final RegistryObject<Block> JAVA_BLOCK = registerBlock("java_block",
             () -> new JavaBlock(BlockBehaviour.Properties.of(Material.EXPLOSIVE)
                     .strength(0f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB, "tooltip.block.java_block");
+
+    public static final RegistryObject<Block> SYNTAX_BLOCK = registerBlock("syntax_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB, "tooltip.block.syntax_block");
+
+    public static final RegistryObject<Block> VAR_BLOCK = registerBlock("var_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).sound(ModSounds.VAR_BLOCK_SOUNDS)
+                    .strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB, "tooltip.block.var_block");
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,

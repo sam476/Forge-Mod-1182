@@ -14,19 +14,16 @@ public class ModSounds {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MCCourseMod.MOD_ID);
 
 
-    public static RegistryObject<SoundEvent> COBALT_LAMP_BREAK = registerSoundEvents("cobalt_lamp_break");
-    public static RegistryObject<SoundEvent> COBALT_LAMP_STEP = registerSoundEvents("cobalt_lamp_step");
-    public static RegistryObject<SoundEvent> COBALT_LAMP_PLACE = registerSoundEvents("cobalt_lamp_place");
-    public static RegistryObject<SoundEvent> COBALT_LAMP_HIT = registerSoundEvents("cobalt_lamp_hit");
-    public static RegistryObject<SoundEvent> COBALT_LAMP_FALL = registerSoundEvents("cobalt_lamp_fall");
+    public static RegistryObject<SoundEvent> VAR_BLOCK_BREAK = registerSoundEvents("var_block_break");
+    public static RegistryObject<SoundEvent> VAR_BLOCK_STEP = registerSoundEvents("var_block_step");
+    public static RegistryObject<SoundEvent> VAR_BLOCK_PLACE = registerSoundEvents("var_block_place");
+    public static RegistryObject<SoundEvent> VAR_BLOCK_HIT = registerSoundEvents("var_block_hit");
+    public static RegistryObject<SoundEvent> VAR_BLOCK_FALL = registerSoundEvents("var_block_fall");
 
 
-
-
-
-    public static final ForgeSoundType COBALT_LAMP_SOUNDS = new ForgeSoundType(1f, 1f,
-            ModSounds.COBALT_LAMP_BREAK, ModSounds.COBALT_LAMP_STEP, ModSounds.COBALT_LAMP_PLACE,
-            ModSounds.COBALT_LAMP_HIT, ModSounds.COBALT_LAMP_FALL);
+    public static final ForgeSoundType VAR_BLOCK_SOUNDS = new ForgeSoundType(1f, 1f,
+            ModSounds.VAR_BLOCK_BREAK, ModSounds.VAR_BLOCK_STEP, ModSounds.VAR_BLOCK_PLACE,
+            ModSounds.VAR_BLOCK_HIT, ModSounds.VAR_BLOCK_FALL);
 
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {

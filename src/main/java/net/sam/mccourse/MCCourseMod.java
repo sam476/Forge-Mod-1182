@@ -16,6 +16,7 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sam.mccourse.block.entity.ModBlocks;
 import net.sam.mccourse.item.ModItems;
+import net.sam.mccourse.sound.ModSounds;
 import org.slf4j.Logger;
 
 import java.util.stream.Collectors;
@@ -37,6 +38,7 @@ public class MCCourseMod
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModSounds.register(eventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

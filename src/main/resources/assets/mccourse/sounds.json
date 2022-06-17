@@ -1,0 +1,32 @@
+{
+  "var_block_break": {
+    "subtitle": "mccourse.var_block_break",
+    "sounds": [
+      "mccourse:var_block_break"
+    ]
+  },
+  "var_block_step": {
+    "subtitle": "mccourse.var_block_step",
+    "sounds": [
+      "mccourse:var_block_step"
+    ]
+  },
+  "var_block_place": {
+    "subtitle": "mccourse.var_block_place",
+    "sounds": [
+      "mccourse:var_block_place"
+    ]
+  },
+  "var_block_hit": {
+    "subtitle": "mccourse.var_block_hit",
+    "sounds": [
+      "mccourse:var_block_hit"
+    ]
+  },
+  "var_block_fall": {
+    "subtitle": "mccourse.var_block_fall",
+    "sounds": [
+      "mccourse:var_block_fall"
+    ]
+  }
+}
